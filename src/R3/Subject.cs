@@ -133,7 +133,7 @@ internal struct CompleteState
     }
 }
 
-public sealed class Subject<T> : Observable<T>, ISubject<T>, IDisposable
+public class Subject<T> : Observable<T>, ISubject<T>, IDisposable
 {
     FreeListCore<Subscription> list; // struct(array, int)
     CompleteState completeState;     // struct(int, IntPtr)
